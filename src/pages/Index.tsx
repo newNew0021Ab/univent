@@ -2,8 +2,8 @@ import { useState } from "react";
 import { Hero } from "@/components/Hero";
 import { CategoryFilter } from "@/components/CategoryFilter";
 import { EventCard } from "@/components/EventCard";
-import { Button } from "@/components/ui/button";
-import { Calendar as CalendarIcon, Plus } from "lucide-react";
+import { DesktopNav } from "@/components/DesktopNav";
+import { MobileNav } from "@/components/MobileNav";
 
 const Index = () => {
   const [activeCategory, setActiveCategory] = useState("all");
@@ -89,27 +89,12 @@ const Index = () => {
       {/* Hero Section */}
       <Hero />
 
-      {/* Navigation Bar */}
-      <nav className="sticky top-0 z-40 bg-card/95 backdrop-blur-sm border-b border-border shadow-sm">
-        <div className="container mx-auto px-4 py-4">
-          <div className="flex items-center justify-between">
-            <h2 className="text-2xl font-bold text-primary">UNIVENT</h2>
-            <div className="flex gap-2">
-              <Button variant="outline" className="gap-2">
-                <CalendarIcon className="h-4 w-4" />
-                Календарь
-              </Button>
-              <Button className="gap-2">
-                <Plus className="h-4 w-4" />
-                Добавить событие
-              </Button>
-            </div>
-          </div>
-        </div>
-      </nav>
+      {/* Navigation */}
+      <DesktopNav />
+      <MobileNav />
 
       {/* Main Content */}
-      <main className="container mx-auto px-4 py-12">
+      <main className="container mx-auto px-4 py-12 pb-24 md:pb-12">
         {/* Category Filter */}
         <div className="mb-12">
           <h2 className="text-3xl font-bold text-center mb-8">Все мероприятия</h2>

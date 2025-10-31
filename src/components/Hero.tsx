@@ -45,26 +45,6 @@ export const Hero = () => {
             Подписаться на уведомления
           </Button>
         </div>
-
-        {/* Stats */}
-        <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto animate-fade-in" style={{ animationDelay: "0.4s" }}>
-          <div className="text-center">
-            <div className="text-4xl font-bold text-white mb-2">1500+</div>
-            <div className="text-white/80">Студентов</div>
-          </div>
-          <div className="text-center">
-            <div className="text-4xl font-bold text-white mb-2">70%</div>
-            <div className="text-white/80">Организаторов</div>
-          </div>
-          <div className="text-center">
-            <div className="text-4xl font-bold text-white mb-2">+25%</div>
-            <div className="text-white/80">Посещаемость</div>
-          </div>
-          <div className="text-center">
-            <div className="text-4xl font-bold text-white mb-2">-30%</div>
-            <div className="text-white/80">Конфликтов дат</div>
-          </div>
-        </div>
       </div>
     </section>
   );
