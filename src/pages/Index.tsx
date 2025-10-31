@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { Hero } from "@/components/Hero";
 import { CategoryFilter } from "@/components/CategoryFilter";
 import { EventCard } from "@/components/EventCard";
 import { DesktopNav } from "@/components/DesktopNav";
@@ -86,9 +85,6 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-background">
-      {/* Hero Section */}
-      <Hero />
-
       {/* Navigation */}
       <DesktopNav />
       <MobileNav />
